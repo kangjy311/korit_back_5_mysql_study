@@ -90,7 +90,7 @@ where
 	name like '%도%' 
     or name like '%원';
     
-# 집계 (그룹화)  		#  from -> where(그룹 묶기전에 조건식) -> group by -> having(그룹시킨 이후에 조건식) -> select -> order by (정렬)
+# 집계 (그룹화)  		#  from (테이블을 만드는 과정) -> where(그룹 묶기전에 조건식) -> group by -> having(그룹시킨 이후에 조건식) -> select (데이터 추출하는 과정) -> order by (정렬)
 select
 	name,
 	address,
