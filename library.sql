@@ -53,4 +53,18 @@ set
 	isbn = nullif(isbn, "");
  
  
+ -- 
+ insert into role_tb
+ values
+ (0, "ROLE_TEMPORARY_USER", "임시사용자", now(), now()),
+ (0, "ROLE_USER", "사용자", now(), now()),
+ (0, "ROLE_ADMIN", "관리자", now(), now());
+ 
+ update
+	book_tb
+set
+	create_date = now(),
+    update_date =- now()
+ 
+ 
  
